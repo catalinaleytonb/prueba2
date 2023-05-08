@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bienvenido</title>
+</head>
+<body> 
+    <header>
+        <!--Creamos el menu y su titulo-->
+        <h1>Tienda 3B</h1>
+        <nav class="Menus">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+            <li><a href="Producto.html">Productos</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="Formulario">
+                <!--en Action llamamos a una pagina gratuita la cual nos envia el formulario al correo asignado-->
+                <h2>Rellena El Formulario</h2>
+                    <table class="tabla">
+                        <tr>
+                            <th><label for="nombre">Nombre:</label></th>
+                            <td><input type="text" placeholder="Nombre" name="nombre" id="nombre"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="apellidos">Apellidos:</label></th>
+                            <td><input type="text" placeholder="Apellidos" name="apellidos" id="apellidos"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="correo">Correo:</label></th>
+                            <td><input type="text" placeholder="ejemplo@gmail.com" name="correo" id="correo"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="producto">Productos</label></th>
+                            <td>
+                                <select class="form-control" id="producto">
+                                    <option value="producto">bolsabasura</option>
+                                    <option value="producto">Detergente</option>
+                                    <option value="producto">Escoba</option>
+                                    <option value="producto">Escobilla</option>
+                                    <option value="producto">Lavaloza</option>
+                                    <option value="producto">Limpiador</option>
+                                    <option value="producto">Trapero</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="mensaje">Mensaje:</label></th>
+                            <td><textarea name="mensaje" cols="80" rows="15" id="mensaje"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><input type="reset" value="Limpiar"></td>
+                            <td><input type="submit" value="Enviar"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+            <p>&copy;Todos Los Derechos Reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
